@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Navbar Animation</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="about.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src='jquery.svg3dtagcloud.min.js'></script>
+    <script>
+
+    	$( document ).ready( function() {
+
+            var entries = [ 
+                
+                { label: 'HTML'},
+                { label: 'CSS'},
+                { label: 'JavaScript'},
+                { label: 'C++'},
+                { label: 'C#'},
+                { label: 'PYTHON'},
+                { label: 'JAVA'},
+                { label: 'REACT.JS'},
+                { label: 'NODE.JS'},
+                { label: 'PHP'},
+                { label: 'SQL'},
+                { label: 'Bootstrap'},
+                { label: 'HTML'},
+                { label: 'CSS'},
+                { label: 'JavaScript'},
+                { label: 'C++'},
+                { label: 'C#'},
+                { label: 'PYTHON'},
+                { label: 'JAVA'},
+                { label: 'REACT.JS'},
+                { label: 'NODE.JS'},
+                { label: 'PHP'},
+                { label: 'SQL'},
+                { label: 'Bootstrap'},
+                
+                
+
+            ];
+
+            var settings = {
+
+                entries: entries,
+                width: 480,
+                height: 480,
+                radius: '85%',
+                radiusMin: 5,
+                bgDraw: true,
+                BgColor: "rgba(0,0,0,0)",
+                opacityOver: 1.00,
+                opacityOut: 0.05,
+                opacitySpeed: 6,
+                fov: 800,
+                speed: 0.3,
+                fontFamily: 'Copperplate, Arial, sans-serif',
+                fontSize: '20',
+                fontColor: '#fff',
+                fontWeight: 'bold',//bold
+                fontStyle: 'normal',//italic 
+                fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                fontToUpperCase: true,
+                tooltipFontFamily: 'oswald, Arial, sans-serif',
+                tooltipFontSize: '11',
+                tooltipFontColor: '#fff',
+                tooltipFontWeight: '500',//bold
+                tooltipFontStyle: 'normal',//italic 
+                tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                tooltipFontToUpperCase: false,
+                tooltipTextAnchor: 'centre',
+                tooltipDiffX: 10,
+                tooltipDiffY: 10
+
+            };
+
+            //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+            $( '#holder' ).svg3DTagCloud( settings );
+
+		} );
+        
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <h3 class="logo">PORT<span>FOLIO</span></h3>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="main">
+          <header>
+            <div class="overlay">
+              <div class="inner">
+                <div class="about-me">ABOUT ME</div>
+                <div class="profilepic">
+                  <img src="profilepic.png" alt="profile pic" width: 20%>
+                </div>
+                <div class="about-text">
+                  Hey! this is Ankit. I am from Shahjahanpur. I am currently
+                  persuing my bachelor's degree in Computer Science and
+                  Engineering from Indian Institute of information Technology,
+                  Kalyani.
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui modi dolorum mollitia. Explicabo, officia provident porro accusamus error assumenda necessitatibus quam delectus consequatur sit, inventore cumque, adipisci quasi atque sed odit ad nostrum odio nisi ea distinctio! Architecto voluptatibus fugit beatae tenetur deleniti, ad impedit, atque eum quas officiis reprehenderit consequatur maxime! Cupiditate sequi tempore accusantium alias magni cum, inventore quidem ducimus hic nostrum perferendis, at eius autem odit! Magnam consectetur eveniet iusto rem modi odio, ut culpa officia necessitatibus neque velit similique nostrum totam vel fugit alias quis nesciunt tenetur. Error adipisci, minima illo mollitia consequatur totam deserunt ut facilis itaque magnam deleniti maxime quo corrupti consectetur illum corporis soluta sed, quam, ratione atque laborum necessitatibus? Rem deleniti sunt incidunt illum quibusdam, saepe consectetur voluptatibus velit! Quidem porro cum, dignissimos quaerat totam qui magni veritatis vel vero voluptatibus id! Tempore vel libero minima excepturi distinctio maxime non culpa dolorem! Nihil voluptatibus quod beatae ut soluta cumque eos earum optio, aspernatur fuga architecto hic adipisci. Eaque, officiis fugiat mollitia, nisi libero similique aperiam distinctio sunt nihil explicabo veritatis. Esse voluptatem quibusdam maiores hic, iure temporibus amet debitis eos minus velit excepturi eius vitae assumenda maxime voluptates explicabo eaque ex. Tenetur.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, enim excepturi sapiente est nisi labore quaerat dolorem quo ipsa totam, numquam veritatis delectus nam saepe porro amet animi tempore reiciendis maxime aliquam quam nobis? Aut quam nostrum velit ullam tempora eligendi nesciunt cum repellendus repudiandae quod in beatae ab ex esse quidem, quisquam dignissimos veniam quos eos natus officia aliquam quo? Rerum eligendi, temporibus soluta beatae quasi possimus non autem ullam porro nostrum. Dolorum maxime perferendis molestias tempore ipsam tempora. Dolorem, quisquam provident cum, commodi iusto quidem beatae non eaque doloremque, odit nemo labore repellendus possimus voluptatem rerum placeat ad!</p>
+                </div>
+                <div class="edu">
+                  <div class="about-me" data-aos="slide-up">MY EDUCATION</div>
+                  <div class="card" data-aos="zoom-out" data-tilt>
+                    <span
+                      class="iconify"
+                      data-icon="fa-solid:school"
+                      data-width="50"
+                    ></span>
+                    <div class="cardtitle">High School Education</div>
+                    I passed my High School Education from Fertilizer Public
+                    School with a score of 10 CGPA.
+                  </div>
+                  <div class="card" data-aos="zoom-out" data-tilt>
+                    <span
+                      class="iconify"
+                      data-icon="emojione-monotone:school"
+                      data-width="50"
+                    ></span>
+                    <div class="cardtitle">Intermediate Education</div>
+                    I passed my Intermediate Education from Heliger Borden
+                    Education Center with a score of 91.5%.
+                  </div>
+                  <div class="card" data-aos="zoom-out" data-tilt>
+                    <span
+                      class="iconify"
+                      data-icon="ic:baseline-school"
+                      data-width="50"
+                    ></span>
+                    <div class="cardtitle">Under-Graduation</div>
+                    I am currently persuing my Bachelor's degree in CSE from
+                    IIIT, Kalyani with a score of 9 CGPA.
+                  </div>
+                </div>
+                <div class="skills">
+                  <div class="about-me" data-aos="slide-up">MY SKILLS</div>
+                  <div class="sphere" data-aos="slide-up"><div id='holder'></div></div>
+                </div>
+                <div class="projects" >
+                  <div class="about-me" data-aos="slide-up">MY PROJECTS</div>
+                </div>
+                <div data-aos="slide-up">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus labore pariatur illum inventore possimus, optio odio, tempore quaerat voluptates quos nulla laboriosam maiores sit. Impedit enim nesciunt, delectus non, qui inventore est quia magnam temporibus fuga nihil quam reprehenderit quisquam fugiat officia reiciendis. Minima, odio dolore! Ad beatae officia, quasi impedit temporibus voluptate cum recusandae molestias pariatur perspiciatis dignissimos fugiat mollitia quo harum aspernatur saepe ullam. Suscipit, quos. Natus repudiandae odio itaque vitae. Error sed odio ipsa iure aliquam magni voluptatibus atque modi recusandae. Sequi debitis, odit fugiat obcaecati perferendis, corporis error beatae vero soluta quaerat eligendi rem molestias facere, maxime id laboriosam eum blanditiis ab ut tempore est esse quidem. Ut voluptatibus temporibus perferendis aut facilis consequuntur voluptas asperiores quibusdam. Provident, veritatis quisquam nostrum consectetur exercitationem ducimus quidem ea dolor alias corporis accusamus ad! Asperiores, error ullam, odit possimus aliquid maiores, ut temporibus reiciendis voluptatum quibusdam officia rerum sint sit velit minima porro dolorum nam fugit deleniti. Quos aut quo harum inventore velit et eos nisi consectetur molestiae hic, nam enim nihil assumenda, cum quis quae dolore ducimus vel, temporibus beatae totam reprehenderit veritatis minus numquam? Voluptatum blanditiis quae, ipsum a distinctio adipisci? Omnis dolorem et doloremque accusamus, ex officia placeat esse eligendi recusandae, dolores quam autem error. Id non ipsum, cum ullam dolores impedit error libero placeat, aspernatur consequuntur quidem beatae quasi vitae eos ad corrupti explicabo harum quos accusamus hic. Eveniet amet, cupiditate inventore unde doloremque accusantium fugiat illum facilis delectus blanditiis numquam ipsum, cumque voluptate ratione illo? Voluptas, deserunt eligendi. Nesciunt fugit pariatur veniam accusamus assumenda porro, quisquam velit commodi saepe corrupti sint consequatur? Accusantium, est! Dicta quos esse non optio fugit repellat sed, quae iste. Blanditiis, cum quod! Facere natus sint saepe perspiciatis, alias voluptate nesciunt, explicabo id quo porro amet repellat voluptates ab. Labore.
+                </div>
+                <div class="edu">
+                  <div class="about-me" data-aos="slide-up">MY HOBBIES</div>
+                  <div class="card" data-aos="zoom-out" data-tilt>
+                    <span
+                      class="iconify"
+                      data-icon="emojione-monotone:guitar"
+                      data-width="50"
+                    ></span>
+                    <div class="cardtitle">GUITAR</div>
+                    I am an amatuer guitar player. I have played few song covers.
+                  </div>
+                  <div class="card" data-aos="zoom-out" data-tilt>
+                    <span
+                      class="iconify"
+                      data-icon="map:art-gallery"
+                      data-width="50"
+                    ></span>
+                    <div class="cardtitle">PAINTING</div>
+                    I am an intermediate painter. I have painted some of the best paintings.
+                  </div>
+                  <div class="card" data-aos="zoom-out" data-tilt>
+                    <span
+                      class="iconify"
+                      data-icon="flat-color-icons:reading"
+                      data-width="50"
+                    ></span>
+                    <div class="cardtitle">READING</div>
+                    I enjoy reading novels as a passtime mostly educational.
+                  </div>
+                  <div class="card" data-aos="zoom-out" data-tilt>
+                    <span
+                      class="iconify"
+                      data-icon="bxs:music"
+                      data-width="50"
+                    ></span>
+                    <div class="cardtitle">MUSIC</div>
+                    I usually listen pleasant music to avoid boredom. 
+                  </div>
+                  <div class="card" data-aos="zoom-out" data-tilt>
+                    <span
+                      class="iconify"
+                      data-icon="subway:world-1"
+                      data-width="50"
+                    ></span>
+                    <div class="cardtitle">TRAVELLING</div>
+                    I love travelling. I wish to have a world tour.
+                  </div>
+                  <div class="card" data-aos="zoom-out" data-tilt>
+                    <span
+                      class="iconify"
+                      data-icon="emojione-monotone:badminton"
+                      data-width="50"
+                    ></span>
+                    <div class="cardtitle">BADMINTON</div>
+                    I am an intermediate badminton player. I have won few tournaments.
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </header>
+        </div>
+        
+
+        <!-- <div class="shadow one"></div>
+        <div class="shadow two"></div> -->
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="index.html" style="--i: 0.05s">Home</a>
+          </li>
+          <li>
+            <a href="about.html" style="--i: 0.1s">About Me</a>
+          </li>
+            <a href="#" style="--i: 0.15s">My Blog</a>
+          </li>
+          <li>
+            <a href="connectme" style="--i: 0.2s">Connect Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 2000,
+      });
+    </script>
+  </body>
+</html>
